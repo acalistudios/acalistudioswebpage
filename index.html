@@ -3,63 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Acali Studios | RetroTAP</title>
+    <title>Acali Studios | RetroTAP</title>
     <style>
-    body {
+        body {
+            background-color: #1a1410; /* Darker tone to match the logo's edges */
+            color: #f4f1ea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+        }
 
+        .container {
+            text-align: center;
+            max-width: 900px;
+            padding: 20px;
+            position: relative;
+        }
 
-    background-color: #f4f1ea; /* "Canvas" off-white */
-    color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Georgia', serif; /* A more classical, artistic font */
-}
+        /* The Animation Logic */
+        @keyframes cloudDrift {
+            0% { transform: scale(1) translateX(0); }
+            50% { transform: scale(1.02) translateX(10px); }
+            100% { transform: scale(1) translateX(0); }
+        }
 
-.container {
-    text-align: center;
-    max-width: 800px;
-    padding: 40px;
-    border: 1px solid #d1ccc0;
-    background: #ffffff;
-    box-shadow: 10px 10px 0px #d1ccc0; /* Stylized "shadow" */
-}
+        .logo-frame {
+            width: 100%;
+            height: auto;
+            border: 1px solid #d1ccc0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            /* This applies the subtle moving effect to the logo */
+            animation: cloudDrift 12s ease-in-out infinite;
+        }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: normal;
-    font-style: italic;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #1a1a1a;
-    display: inline-block;
-}
+        .cta-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 35px;
+            border: 1px solid #f4f1ea;
+            color: #f4f1ea;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s;
+        }
 
-.cta-button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 30px;
-    border: 2px solid #1a1a1a;
-    color: #1a1a1a;
-    text-decoration: none;
-    font-weight: bold;
-transition: background 0.3s;
-}
-
-.cta-button:hover {
-    background: #1a1a1a;
-    color: #f4f1ea;
-}
+        .cta-button:hover {
+            background: #f4f1ea;
+            color: #1a1410;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>ACALI Studios</h1>
-        <p>Your friendly neighborhood game studio. Something exciting is coming soon.</p>
-        <a href="#" class="cta-button">Stay Updated</a>
+        <img src="ACALI logo.png" alt="Acali Studios Logo" class="logo-frame">
+        <br>
+        <a href="#" class="cta-button">Enter the Studio</a>
     </div>
 </body>
 </html>
