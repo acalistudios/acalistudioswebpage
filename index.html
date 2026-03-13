@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acali Studios | RetroTAP</title>
+    <title>ACALI Studios | RetroTAP</title>
     <style>
-        /* Enables the smooth gliding effect when clicking the button */
+        /* Smooth scrolling for navigation links */
         html { 
             scroll-behavior: smooth; 
         }
 
         body {
-
-<nav class="main-nav">
-    <div class="nav-brand">ACALI STUDIOS</div>
-    <div class="nav-links">
-        <a href="#apps">Apps</a>
-        <a href="/retroTAP/privacy-policy">Privacy Policy</a>
-        <a href="mailto:your-email@example.com">Contact</a>
-    </div>
-</nav>
-
-            background-color: #1a1410; /* Dark tone to blend with logo edges */
+            background-color: #1a1410; /* Dark tone to match logo edges */
             color: #f4f1ea;
             margin: 0;
             font-family: 'Georgia', serif;
@@ -30,7 +20,38 @@
             align-items: center;
         }
 
-        /* The main landing view */
+        /* Navigation Menu - Fixed and Transparent "Glass" Style */
+        .main-nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgba(26, 20, 16, 0.6); 
+            backdrop-filter: blur(10px); 
+            z-index: 1000;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(209, 204, 192, 0.1);
+        }
+
+        .nav-brand {
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+        }
+
+        .nav-links a {
+            color: #f4f1ea;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section - Centered content with padding for the Nav bar */
         .hero-section {
             height: 100vh;
             display: flex;
@@ -38,36 +59,39 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px;
+            padding: 80px 20px 20px 20px; 
+            box-sizing: border-box;
         }
 
         .logo-frame {
-            max-width: 900px;
+            max-width: 800px;
             width: 100%;
             height: auto;
             border: 1px solid #d1ccc0;
             box-shadow: 0 20px 40px rgba(0,0,0,0.6);
         }
 
+        /* High-visibility Button positioned close to the logo */
         .cta-button {
             display: inline-block;
-            margin-top: 40px;
-            padding: 15px 35px;
-            border: 1px solid #f4f1ea;
+            margin-top: 25px; 
+            padding: 16px 36px;
+            border: 2px solid #f4f1ea;
+            background-color: rgba(26, 20, 16, 0.8);
             color: #f4f1ea;
             text-decoration: none;
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             transition: all 0.4s;
         }
 
         .cta-button:hover {
-            background: #f4f1ea;
+            background-color: #f4f1ea;
             color: #1a1410;
         }
 
-        /* The destination section for the button */
+        /* Apps/Gallery Section */
         #gallery {
             min-height: 100vh;
             width: 100%;
@@ -75,7 +99,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #f4f1ea; /* Swaps to light canvas for the art area */
+            background-color: #f4f1ea; 
             color: #1a1a1a;
             text-align: center;
         }
@@ -84,22 +108,57 @@
             max-width: 800px;
             padding: 40px;
         }
+
+        /* Footer for legal and contact info */
+        footer {
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+            background-color: #1a1410;
+            color: #d1ccc0;
+            border-top: 1px solid rgba(209, 204, 192, 0.1);
+            box-sizing: border-box;
+        }
+
+        .footer-links a {
+            color: #f4f1ea;
+            text-decoration: none;
+            font-size: 0.8rem;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
 
+    <nav class="main-nav">
+        <div class="nav-brand">ACALI STUDIOS</div>
+        <div class="nav-links">
+            <a href="#gallery">Apps</a>
+            <a href="mailto:contact@acalistudios.com">Contact</a>
+        </div>
+    </nav>
+
     <div class="hero-section">
-        <img src="ACALI logo.png" alt="Acali Studios Logo" class="logo-frame">
-        <br>
+        <img src="ACALI logo.png" alt="ACALI Studios Logo" class="logo-frame">
         <a href="#gallery" class="cta-button">Enter the Studio</a>
     </div>
 
     <div id="gallery">
         <div class="gallery-content">
             <h2>Our Collection</h2>
-            <p>The doors are open. Explore the works of Acali Studios.</p>
+            <p>The doors are open. Explore the works of ACALI Studios.</p>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 ACALI STUDIOS</p>
+        <div class="footer-links">
+            <span style="font-size: 0.75rem; color: #888; display: block; margin-bottom: 10px;">PRIVACY POLICIES</span>
+            <a href="/App/retroTAP/privacy-policy">RetroTAP</a>
+            </div>
+    </footer>
 
 </body>
 </html>
