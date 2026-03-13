@@ -5,39 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acali Studios | RetroTAP</title>
     <style>
+        /* Enables the smooth gliding effect when clicking the button */
+        html { 
+            scroll-behavior: smooth; 
+        }
+
         body {
-            background-color: #1a1410; /* Darker tone to match the logo's edges */
+
+<nav class="main-nav">
+    <div class="nav-brand">ACALI STUDIOS</div>
+    <div class="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="/retroTAP/privacy-policy">Privacy Policy</a>
+        <a href="mailto:your-email@example.com">Contact</a>
+    </div>
+</nav>
+
+            background-color: #1a1410; /* Dark tone to blend with logo edges */
             color: #f4f1ea;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
             font-family: 'Georgia', serif;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .container {
+        /* The main landing view */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            max-width: 900px;
             padding: 20px;
-            position: relative;
-        }
-
-        /* The Animation Logic */
-        @keyframes cloudDrift {
-            0% { transform: scale(1) translateX(0); }
-            50% { transform: scale(1.02) translateX(10px); }
-            100% { transform: scale(1) translateX(0); }
         }
 
         .logo-frame {
+            max-width: 900px;
             width: 100%;
             height: auto;
             border: 1px solid #d1ccc0;
             box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-            /* This applies the subtle moving effect to the logo */
-            animation: cloudDrift 12s ease-in-out infinite;
         }
 
         .cta-button {
@@ -57,13 +66,40 @@
             background: #f4f1ea;
             color: #1a1410;
         }
+
+        /* The destination section for the button */
+        #gallery {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f1ea; /* Swaps to light canvas for the art area */
+            color: #1a1a1a;
+            text-align: center;
+        }
+
+        .gallery-content {
+            max-width: 800px;
+            padding: 40px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="hero-section">
         <img src="ACALI logo.png" alt="Acali Studios Logo" class="logo-frame">
         <br>
-        <a href="#" class="cta-button">Enter the Studio</a>
+        <a href="#gallery" class="cta-button">Enter the Studio</a>
     </div>
+
+    <div id="gallery">
+        <div class="gallery-content">
+            <h2>Our Collection</h2>
+            <p>The doors are open. Explore the works of Acali Studios.</p>
+        </div>
+    </div>
+
 </body>
 </html>
