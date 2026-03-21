@@ -91,10 +91,11 @@
             color: #1a1410;
         }
 
-        /* Apps/Gallery Section */
+        /* Apps/Gallery Section Styling */
         #gallery {
             min-height: 100vh;
             width: 100%;
+            padding: 100px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -102,11 +103,12 @@
             background-color: #f4f1ea; 
             color: #1a1a1a;
             text-align: center;
+            box-sizing: border-box;
         }
 
         .gallery-content {
-            max-width: 800px;
-            padding: 40px;
+            max-width: 1000px;
+            width: 100%;
         }
 
         /* Footer for legal and contact info */
@@ -147,8 +149,24 @@
 
     <div id="gallery">
         <div class="gallery-content">
-            <h2>Our Collection</h2>
-            <p>The doors are open. Explore the works of ACALI Studios.</p>
+            <h2 style="text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px;">Our Collection</h2>
+            
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                
+
+<a href="retrotap.html" style="text-decoration: none; transition: transform 0.3s; display: block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+
+                    <div style="width: 200px; aspect-ratio: 1/1; overflow: hidden; border-radius: 40px; border: 1px solid rgba(209, 204, 192, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <img src="App/retroTAP/retrotap-icon.png" alt="retroTAP" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </a>
+
+
+                <div style="width: 250px; border: 1px dashed #d1ccc0; padding: 20px; display: flex; align-items: center; justify-content: center; color: #d1ccc0;">
+                    <p style="font-style: italic;">Coming Soon</p>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -157,7 +175,7 @@
         <div class="footer-links">
             <span style="font-size: 0.75rem; color: #888; display: block; margin-bottom: 10px;">PRIVACY POLICIES</span>
             <a href="/App/retroTAP/privacy-policy">RetroTAP</a>
-            </div>
+        </div>
     </footer>
 
 </body>
