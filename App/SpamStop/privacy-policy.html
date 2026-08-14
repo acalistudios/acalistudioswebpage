@@ -16,27 +16,27 @@
     <p><strong>Last Updated:</strong> August 13, 2026</p>
 
     <h2>1. Overview</h2>
-    <p>ACALI Studios ("we," "our," or "us") operates SpamStop, an Android SMS spam detection and notification-suppression application. SpamStop does not require an account and does not operate a server that receives your messages, contacts, sender identifiers, filtering rules, or caught-spam log.</p>
+    <p>ACALI Studios ("we," "our," or "us") operates SpamStop, an Android SMS and MMS spam detection and notification-suppression application. SpamStop does not require an account and does not operate a server that receives your messages, contacts, sender identifiers, filtering rules, or caught-spam log.</p>
 
     <h2>2. How SpamStop Works</h2>
-    <p>SpamStop is not your default SMS application. It reads and classifies incoming SMS messages on your device. When a message matches a spam rule, SpamStop copies it into a private local review log and, when you grant Android Notification access, suppresses the corresponding notification from supported messaging applications. The original SMS remains unchanged and available in your default messaging application.</p>
-    <p>If you choose <strong>Scan Existing Messages</strong>, SpamStop reads up to the latest 500 SMS messages and copies detected matches into its local log. It does not delete or move the original messages.</p>
+    <p>SpamStop is not your default SMS application. It reads and classifies incoming SMS and MMS text messages on your device. When a message matches a spam rule, SpamStop copies it into a private local review log and, when you grant Android Notification access, suppresses the corresponding notification from supported messaging applications. The original SMS or MMS remains unchanged and available in your default messaging application.</p>
+    <p>If you choose <strong>Scan Existing Messages</strong>, SpamStop reads up to the latest 500 SMS and MMS messages and copies detected matches into its local log. It does not delete or move the original messages.</p>
 
     <h2>3. Permissions and Their Uses</h2>
-    <p><strong>Receive and Read SMS:</strong> Used to classify the complete text of newly received SMS messages and to perform the existing-message scan that you initiate. SMS processing occurs locally.</p>
+    <p><strong>Receive and Read SMS/MMS:</strong> Used to classify incoming SMS messages, read the text portions of MMS messages from Android&apos;s on-device messaging provider, and perform the existing-message scan that you initiate. SMS and MMS processing occurs locally.</p>
     <p><strong>Send SMS:</strong> Requested only when you enable or invoke a sending feature. SpamStop may send a manual STOP reply, a confirmed carrier report to 7726, a user-initiated bulk STOP action, or an optional Auto-Reply STOP to eligible political and marketing senders. SpamStop does not auto-reply to messages categorized as scam or fraud.</p>
     <p><strong>Carrier reports:</strong> If you confirm a report to 7726, SpamStop transmits the selected spam message to your mobile carrier. If the carrier requests the sender information needed to complete that report, SpamStop also transmits the spam sender&apos;s number to the carrier. This user-initiated information is then handled under your carrier&apos;s privacy practices.</p>
     <p><strong>Contacts:</strong> Optional. If enabled, SpamStop reads contacts locally to recognize saved senders and allow their messages. Contacts are not uploaded by ACALI Studios. SMS filtering continues if contact protection is off.</p>
-    <p><strong>Notification Access:</strong> Used to inspect supported messaging notifications, classify SMS or RCS notification text locally, and suppress notifications that match the filter. Android provides broad notification access at the system level, but SpamStop processes supported messaging notifications for this stated purpose.</p>
+    <p><strong>Notification Access:</strong> Used to inspect supported messaging notifications, identify incoming MMS events, classify supported messaging notification text locally, and suppress notifications that match the filter. Android provides broad notification access at the system level, but SpamStop processes supported messaging notifications for this stated purpose.</p>
     <p><strong>Post Notifications:</strong> Used to show caught-spam alerts or summaries according to your selected notification style.</p>
 
     <h2>4. Local Data</h2>
     <p>SpamStop stores its caught-spam log, filtering preferences, custom keywords, allowed numbers, category settings, and purchase-entitlement flags locally on your device. Automatic Android cloud backup is disabled for SpamStop. You may explicitly export keyword and sender-rule lists using the app's export feature.</p>
     <p>When you export filtering rules, Android sends the exported text to the app or service you select. After that transfer, the recipient&apos;s privacy policy and security practices apply to the exported data.</p>
-    <p>Deleting an item from SpamStop removes it from SpamStop's local log only. It does not delete the original SMS from your messaging application.</p>
+    <p>Deleting an item from SpamStop removes it from SpamStop's local log only. It does not delete the original SMS or MMS from your messaging application.</p>
 
     <h2>5. Data Collection and Sharing</h2>
-    <p>ACALI Studios does not collect, sell, rent, or share SMS contents, contacts, phone numbers, sender identifiers, notification contents, filtering rules, or the caught-spam log. SpamStop contains no advertising or analytics SDK.</p>
+    <p>ACALI Studios does not collect, sell, rent, or share SMS or MMS contents, contacts, phone numbers, sender identifiers, notification contents, filtering rules, or the caught-spam log. SpamStop contains no advertising or analytics SDK.</p>
 
     <h2>6. Purchases</h2>
     <p>Optional subscriptions, lifetime access, and tips are processed by Google Play Billing. Google processes payment and account information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. SpamStop receives purchase status needed to unlock features and stores a local entitlement flag; ACALI Studios does not receive your payment-card details.</p>
