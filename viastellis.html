@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaStellis | ACALI STUDIOS</title>
+    <style>
+        body {
+            background-color: #0e0a1e;
+            color: #f4f1ea;
+            margin: 0;
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-header {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #1a1333, #0e0a1e);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .app-icon {
+            width: 180px;
+            border-radius: 40px;
+            border: 1px solid rgba(252, 211, 77, 0.3);
+            box-shadow: 0 0 40px rgba(167, 139, 250, 0.35);
+        }
+
+        .back-link {
+            color: #d1ccc0;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .back-link:hover { color: #f4f1ea; }
+
+        .content-section {
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(252, 211, 77, 0.12);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .feature-card .icon {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fcd34d;
+        }
+
+        .feature-card p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #c9c3d8;
+            line-height: 1.6;
+        }
+
+        .cta-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, #fcd34d, #f59e0b);
+            color: #1a1333;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            font-family: 'Georgia', serif;
+        }
+
+        .download-button:hover { transform: scale(1.05); }
+
+        .store-button {
+            display: inline-block;
+            padding: 16px 32px;
+            border: 1px solid rgba(244, 241, 234, 0.3);
+            color: #a8a2bd;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            cursor: default;
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 60px 20px;
+            width: 100%;
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            box-sizing: border-box;
+        }
+
+        .footer-link {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-link:hover { color: #888; }
+    </style>
+</head>
+<body>
+
+    <div class="hero-header">
+        <a href="index.html" class="back-link">&#8592; Back to ACALI STUDIOS</a><br><br>
+        <img src="App/ViaStellis/viastellis-icon.png" alt="ViaStellis Icon" class="app-icon">
+        <h1 style="letter-spacing: 6px; text-transform: uppercase; margin-top: 30px; font-size: 2.5rem;">ViaStellis</h1>
+        <p style="font-style: italic; color: #c9c3d8; font-size: 1.1rem;">Your AI-guided astrologer. Tarot, birth charts, and the stars, decoded.</p>
+    </div>
+
+    <div class="content-section">
+        <h2 style="text-transform: uppercase; letter-spacing: 2px; color: #fcd34d;">What It Does</h2>
+        <p style="font-size: 1.05rem; line-height: 1.85; color: #d1ccc0;">
+            ViaStellis blends traditional astrology and tarot with a personal AI guide, Stella.
+            Pull a tarot spread, generate a full birth chart, check your daily horoscope, or just
+            talk through what's on your mind — Stella remembers the context and tailors every
+            reading to you.
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">&#127183;</div>
+                <h3>Tarot Readings</h3>
+                <p>Full deck spreads with upright and reversed meanings, interpreted by Stella for your question.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#10024;</div>
+                <h3>Birth Charts</h3>
+                <p>Detailed natal charts with a clean, shareable layout — Western and Vedic systems supported.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#127769;</div>
+                <h3>Daily Horoscope</h3>
+                <p>A free daily read, plus deeper custom horoscopes when you want more detail.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128172;</div>
+                <h3>Chat with Stella</h3>
+                <p>An AI astrologer that remembers your chart and past readings, so every conversation builds on the last.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128149;</div>
+                <h3>Compatibility Matching</h3>
+                <p>Compare charts with someone else to see where you align — and where you don't.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128273;</div>
+                <h3>Free + Premium</h3>
+                <p>Start free with daily readings and credits; go premium for unlimited access to every feature.</p>
+            </div>
+        </div>
+
+        <div class="cta-row">
+            <a href="https://viastellis.com" class="download-button" target="_blank" rel="noopener">Visit ViaStellis.com</a>
+            <span class="store-button">Coming Soon on Google Play</span>
+            <span class="store-button">Coming Soon on the App Store</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ACALI STUDIOS</p>
+        <div style="margin-top: 15px;">
+            <a href="https://viastellis.com/privacy" class="footer-link" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="mailto:acalistudios@gmail.com" class="footer-link">Support</a>
+        </div>
+    </footer>
+
+</body>
+</html>
